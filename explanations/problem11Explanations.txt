@@ -1,0 +1,69 @@
+First comparison:
+File name (input): "problem11InputA"
+
+Source URL: http://www.fa-kuan.muc.de/LUCEAFA.HTML#eng
+
+Source details: This website has the same poem in two languages (English and Romanian).
+In our case the file "problem11InputA" only contains the English version with the title 
+"Evening Star." More specifically the entire English version of the poem is given as input
+to our program excluding anything not part of the actual poem such as the title, and the
+stars ("*") separating parts of the poem. 
+
+Analysis: After calculating the entire entropy of both the input and the "optimal" English alphabet
+it is seen that it would take less binary numbers to encode this input with its own Huffman codes.
+Further, this input's total alphabet entropy is ~ 4.17 compared to that of the English alphabet
+which is ~ 4.18. This means that we would save about 0.31% binary numbers per character if we were to use 
+"problem11InputA" codes. Additionally this is an interesting result as the poem does not necessarily 
+encorporate English writing conventions being that its original version is in Romanian. Nevertheless 
+though it seemed like it's character frequencies were proportional to those of the "optimal English alphabet"
+and therefore had a very close entropy. To be specific, however, it is obvious that this input's total entropy should 
+be less as it is a poem and many characters are repeated ultimately causing a majority of the characters
+to be represented by few binary numbers. This is clearly unlike the English alphabet which, in comparison,
+has characters with frequencies that are much closer to each other essentially causing the Huffman codes
+to be bigger and more equal in length. 
+
+______________________________________________________________________________________
+
+Second Comparison:
+File name (input): "problem11InputB"
+
+Source URL: http://shakespeare.mit.edu/measure/full.html
+
+Source details: The input file only contains text up to and including Duke Vincentio's fourth speech. 
+In other words everything besides the title, the act, and the speaker's names is included up to when Duke Vincentio 
+says "Take thy commission."
+
+Analysis: Calculating the total entropy for the input's alphabet we find that it is 0.26% more
+efficient than the "optimal" English alphabet entropy. Being that the play "Measure for Measure" is ~ 410 years 
+old it is a fact that certain words and expressions were different than that of todays. Therefore it is clear that many 
+characters had different frequencies as their usages were genuinely different. To illustrate lets imagine 
+that in 1604 the character "a" had a frequency of 67% and in 2013 it had a frequency of 39%. Respectively
+the Huffman code for "a" in 1604 might look like "1011" and in 2013 it may look like "10110011". 
+Undoubtedly if we are encoding a text with writing conventions of 1604 it would be more efficient to use
+the "a" encoding of "1011" as it correlates to the character frequencies of the time. It would not make sense
+to encode "a" with a bigger binary number (such as that of 2013 or the English alphabet) if it is encountered more frequently. 
+This is an interesting result as it shows that while most English texts may benefit from an average entropy there are also 
+many texts which do not. Specifically, the texts that are based upon foreign conventions or older styles of writing are the ones
+that do not benefit. This is the case as such alphabets have different letter frequencies and probabilities which essentially cause
+this deviation in the entropy. 
+______________________________________________________________________________________
+
+Third Comparison:
+File name (input): "problem11InputC"
+
+Source URL: https://github.com/libgdx/libgdx/wiki/A-simple-game
+
+Source details: All the way down the page there is a header "The Full Source". Below this header
+is the code all of which is part of our input. 
+
+Analysis: Unlike the previous two comparisons this input is actually less efficient than the optimal encoding (the English alphabet).
+Because this input is computer code there is much repetition (repetition = frequency) such as variable names, import statements, and method calls.
+While high frequencies are sometimes beneficial it is not always. Repetition is not beneficial when it causes characters to have close probabilities
+When frequencies are not as dramatically spread the Huffman codes end up close to similar lengths. Therefore 
+in such cases using the codes for the English alphabet would get the encoding to be more optimal
+as certain letters that are more common in the average English alphabet would be represented by less binary numbers in comparison to what would almost 
+be equal length encoding for our input. Ultimately, this example is interesting as it shows the potential downsides/weak points of the Huffman algorithm.
+Here we learn that in order for the Huffman algorithm to be most effective it must have great differences between it's character's frequencies as that allows to
+represent codes with a higher probability using less binary numbers, and vice versa. 
+
+______________________________________________________________________________________

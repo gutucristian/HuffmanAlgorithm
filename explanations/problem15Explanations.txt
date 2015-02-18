@@ -1,0 +1,11 @@
+17 of the given bigrams are considered efficient as they slightly reduce the total
+entropy from 4.1846 to 4.1845. This is calculated by subtracting the bigram 
+frequency from each of the monograms that make it up while also adding the bigram
+to the Huffman dictionary. If the entropy for this new alphabet is smaller than the 
+original English alphabet then the bigram helps to reduce the entropy. In such a case we 
+add the bigram and continue a similar proccess for all the bigrams in the alphabet. 
+Further, while these 17 bigrams reduce the english alphabet entropy we can actually
+have the alphabet entropy even lower if we disregard certain binomials. One instance
+were this can be seen is if we just include the "qu" binomial and have a total entropy 
+of 4.1840. Knowing this it is clear that even though there are 17 binomials which help reduce the entropy
+there are cases in which we can remove some binomials and still get a better entropy.

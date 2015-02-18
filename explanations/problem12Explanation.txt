@@ -1,0 +1,86 @@
+In an alphabet of N amount of letters where all letters have the same frequency the length of each Huffman code
+is equal to log(N)/log(2). To derive this one must realize that in order to represent an alphabet with N
+amount of letters there must also be at least N amount of combinations. In addition it is also important 
+to see that such combinations can only be made of 1's and 0's. With this in mind we can setup the equation: 2^x = N
+(Note: let "x" be amount of binary numbers per character). Further, this Huffman encoding compares to equal-length 
+encoding as it has the ability to remove unnecessary prefixes that otherwise act as placeholders in equal-length 
+encoding. For instance the equation for finding the amount of binary numbers needed to represent one character in 
+equal-length encoding is CEILING(log(N)/log(2)). Clearly the difference between these two representations is the CEILING()
+function which essentially rounds a decimal number up to the next integer. Obviously this step is important in equal-length
+encoding as each letter must be represented by the same amount of binary numbers. This matter is they key difference
+between these two representations as the Huffman algorithm does not have the unnecessary binary numbers. In other words
+an alphabet of 26 letters needs 5 binary numbers per character to be represented with equal length codes. This method
+works however there are 2^5 or 32 combinations 6 of which are clearly not used as our alphabet only has 26 letters. 
+Knowing this flaw in equal-length encoding it is easy to see precisely why Huffman codes are more efficient as they:
+they do not account for those extra 6 unnecessary combinations. To emphasize lets observe the different method's codes:
+
+Equal-length English alphabet:
+
+a : 00000
+b : 00001
+c : 00010
+d : 00011
+e : 00100
+f : 00101
+g : 00110
+h : 00111
+i : 01000
+j : 01001
+k : 01010
+l : 01011
+m : 01100
+n : 01101
+o : 01110
+p : 01111
+q : 10000
+r : 10001
+s : 10010
+t : 10011
+u : 10100
+v : 10101
+w : 10110
+x : 10111
+y : 11000
+z : 11001
+
+Huffman equal-length English alphabet:
+
+a : 0000
+b : 0001
+c : 0010
+d : 0011
+e : 10000
+f : 10001
+g : 10010
+h : 10011
+i : 10100
+j : 10101
+k : 10110
+l : 10111
+m : 11000
+n : 11001
+o : 11010
+p : 11011
+q : 11100
+r : 11101
+s : 11110
+t : 11111
+u : 01100
+v : 01101
+w : 01110
+x : 01111
+y : 0100
+z : 0101
+
+Observing the two alphabets it is seen how the Huffman codes for the letters a,b,c,d,y,z differ as they do not 
+have a "0" in the beginning. This fact comes without surprise as we know that the Huffman dictionary presents more
+frequent characters with less binary numbers while also removing unnedded prefixes.It is worth noting,
+however, that this can only be done while no prefixes coincide as if that happens decoding an alphabet would not
+be possible. Further, to show how much more optimal Huffman's approach is one can calculate the percent change
+between between these two methods. 
+
+Total entropy for Huffman equal-length encoding: (log(26)/log(2)) = 4.7004 (bits per character)
+Total bits per character for equal-length encoding: CEIL(log(26)/log(2)) = 5
+
+So (((4.7004/5)* 100) -100) = -6. This tells us that if we are to use Huffman's algorithm we are guaranteed
+to have about 6% less binary numbers per character than if we were to use the equal length encoding approach. 

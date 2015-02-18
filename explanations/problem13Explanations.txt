@@ -1,0 +1,33 @@
+Key:
+
+First case: a = 50, b = 7, c = 7, d = 7, e = 7, f = 7, g = 7, h = 7
+
+Second case: a = 20, b = 20, c = 20,  d = 20, e = 5, f = 5, g = 5, h = 5
+
+Third case: a = 50, b = 25, c = 13, d = 6, e = 3,  f = 1, g = 1, h = 1
+
+- Entropy: amount of bits per character 
+- The equation  -p * ( log(p) / log(2) ) represents entropy for an individual character in a given alphabet
+  
+Note:  let p be probability of a given character within an alphabet
+____________________________________________________________________________
+
+The third case case gives me a better ratio as it, on average, for every one equal length character can represent 1.51 Huffman code characters. 
+
+Hypothesis: If one character has the highest possible frequency and the rest of the characters have a frequency of 1 then 
+we will achieve a better efficiency becasue the most frequent character will be represented in the least amount of binary numbers. 
+
+While the third case was the most efficient from the three given alphabets I came up with an 8-letter alphabet that had a more efficient encoding.
+
+My alphabet: a = 93, b = 1, c = 1, d = 1, e = 1, f = 1, g = 1, h = 1
+
+This alphabet has a ratio of equal-length encoding to Huffman length encoding of 2.5. 
+Because of this we can see that if we were to encode this same exact alphabet with equal-length 
+binary codes it would take the same amount of binary numbers to represent 1 character as it would
+take to represent 2.5 characters with Huffman codes. Further, if we observe the graph below 
+we can generalize our hypothesis. This graph represents how much entropy is required
+for one character based on its probability within an alphabet.  Knowing this we can see 
+that the most optimal codes are created when the probability of a character is close to 100% or 0%. 
+Graphically this is seen as the x values within those ranges result in the lowest y intercepts which indicates 
+a lower entropy. With this in mind we can see why my alphabet was the most optimal as the frequencies of all 
+the characters were either close to 100% probability or 1% probability. 
