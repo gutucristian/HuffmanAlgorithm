@@ -1,8 +1,8 @@
 # HuffmanAlgorithm
 
-Note: all input should be in the form of a text file with a ".txt" extension. All program output will be done using Java's System.out.println().
+**Note**: all input should be in the form of a text file with a ".txt" extension. All program output will be done using Java's System.out.println().
 
-##Overview of Compression class, Huffman class, EqualLengthCompression class
+##Overview of Compression, Huffman, EqualLengthCompression classes
 
 ###Reading input:
 
