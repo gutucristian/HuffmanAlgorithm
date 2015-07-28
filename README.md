@@ -18,7 +18,7 @@ Both the `Huffman` class and the `EqualLengthCompression` class read input with 
 
 `setupDictionaryFromFile(String fileName, boolean isAlphabetRawText)`
 
- * `fileName` - the file name and a ".txt" extension added to it
+ * `fileName` - the file name and a `.txt` extension added to it
 
 * `isAlphabetRawText` - indicates if text is raw (a play or a book is considered "raw text") or if its an alphabet such as
    `a=23,b=34,c=98`
@@ -30,8 +30,6 @@ Both the `Huffman` class and the `EqualLengthCompression` class read input with 
 `huffman.setupHuffmanCodes();`
 
 `equalLengthCompression.setupDictionaryFromFile("test.txt");`
-
-`setupDictionaryFromFile(String fileName) // will build the codes as well as setup the dictionary`
 
 **Note you can also print the codes and their letter:**
 
