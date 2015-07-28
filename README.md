@@ -1,5 +1,4 @@
 # HuffmanAlgorithm
-___________________________________
 
 Input to program: all input should be in the form of a text file with a ".txt" extension. 
 
@@ -8,9 +7,7 @@ ____________________________________
 
 General overview of using Compression class, Huffman class, EqualLengthCompression class:
 
-~ ~ ~ ~ ~ ~ ~
 Reading input:
-~ ~ ~ ~ ~ ~ ~
 
 Both the Huffman class and the EqualLengthCompression class read input with the same inherited method.
 
