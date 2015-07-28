@@ -10,7 +10,7 @@ Both the `Huffman` class and the `EqualLengthCompression` class read input with 
 
 Example file name: `test.txt`
 
-Having an object of Huffman class or EqualLengthCompression class:
+Having an object of `Huffman` class or `EqualLengthCompression` class:
 
 `Huffman huffman = new Huffman();`
 
@@ -28,11 +28,12 @@ Read from a file:
 
 ##Building Huffman codes and EqualLengthCompression codes from a file:
 
-*Example file name:* `test.txt`
+Example file name: `test.txt`
 
 Instantiate `Huffman` object:
 
 `Huffman huffman = new Huffman();`
+
 `EqualLengthCompression equalLengthCompression = new EqualLengthCompression();`
 
 Setup dictionary from file:
@@ -40,7 +41,9 @@ Setup dictionary from file:
 Use `setupDictionaryFromFile(String fileName, boolean isAlphabetRawText)` to setup dictionary.
 
 `fileName` - the file name and a ".txt" extension added to it
-`isAlphabetRawText` - indicates if text is raw (a play or a book is considered "raw text") or if its an alphabet such as `a=23,b=34,c=98`
+
+`isAlphabetRawText` - indicates if text is raw (a play or a book is considered "raw text") or if its an alphabet such as
+`a=23,b=34,c=98`
 
 `huffman.setupDictionaryFromFile("test.txt", false);`
 
