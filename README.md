@@ -31,7 +31,7 @@ Both the `Huffman` class and the `EqualLengthCompression` class read input with 
 
 `equalLengthCompression.setupDictionaryFromFile("test.txt");`
 
-**Note you can also print the codes and their letter:**
+**Note:** you can also print the codes and their letter:
 
 `huffman.printCodes();`
 
@@ -61,7 +61,7 @@ Use `removeNonLetterSymbols(String input, String additionalCharactersToKeep)` fo
 
 ##Decoding text with Huffman object or EqualLengthCompression object:
 
-**Note:** in order to successfully decode Huffman codes or EqualLengthCompression codes
+**Note:** in order to successfully decode `Huffman` codes or `EqualLengthCompression` codes
 their dictionaries must be setup and the codes must be built. Also know that if file has
 unwanted characters it should be filtered.
 
