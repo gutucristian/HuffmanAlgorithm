@@ -1,54 +1,9 @@
 # HuffmanAlgorithm
-Huffman encoding algorithm
-
-Project must be opened with the IntelliJ IDEA IDE.
-
-To download IntelliJ 13.1.6 Community Edition see: 
-http://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases
-
-To open project go to File > Open > project directory
-
-Note: if you have sdk problems go to File > Project Structure > Project SDK > your jdk root directory 
-
 ___________________________________
-For code documentation go to MITPrimes > documentation > index.html
-
-On this webpage towards the left hand side there is a panel named "All Classes". From 
-here just click on any class to view its complete documentation. Note that in addition
-to this documentation the code contains in-line comments to provide additional explanations.
-
-____________________________________
-
-For Computer Science problems 11, 12, 13, 15 see MITPrimes > explanations
-
-Here each of these problems have additional explanations. 
-
-Note: problem 13 is a Windows "Rich Text Document" with an ".rtf" extension.
-If you cannot open this file read the ".txt" version of "problem13Explanations"
-and then view the "problem13Graph.png". 
-
-____________________________________
-
-For Computer Science problems 1,6 see MITPrimes -> ComputerScienceWrittenWork
-
-____________________________________
-
-Notice that the Main.java class is the main class which ties the project together. This class
-initiates all objects and has each problem setup. Also take note that each problem is separated
-by the switch case statements. 
-
-____________________________________
-
-To see what each problem output is like go to:
-
-MITPrimes -> MITPrimesCSProblemsOutputScreens
-
-____________________________________
 
 Input to program: all input should be in the form of a text file with a ".txt" extension. 
 
 Output from program: all program output will be done using System.out.println() to the IDE console.
-
 ____________________________________
 
 General overview of using Compression class, Huffman class, EqualLengthCompression class:
