@@ -8,7 +8,7 @@
 
 Both the `Huffman` class and the `EqualLengthCompression` class read input with the same inherited method.
 
-**Example file name:** `test.txt`
+Example file name: `test.txt`
 
 Having an object of `Huffman` class or `EqualLengthCompression` class:
 
@@ -20,7 +20,7 @@ Make a result `String` variable:
 
 `String result = "";`
 
-**Read from a file:**
+Read from a file:
 
 `result = huffman.getInputFromFile("test.txt");`
 
@@ -28,7 +28,7 @@ Make a result `String` variable:
 
 ##Building Huffman codes and EqualLengthCompression codes from a file:
 
-**Example file name: `test.txt`**
+Example file name: `test.txt`
 
 Instantiate `Huffman` object:
 
