@@ -22,6 +22,7 @@ Both the `Huffman` class and the `EqualLengthCompression` class read input with 
 *Read from a file:*
 
 `result = huffman.getInputFromFile("test.txt");`
+
 `result = equalLengthCompression.getInputFromFile("test.txt");`
 
 ##Building Huffman codes and EqualLengthCompression codes from a file:
@@ -99,7 +100,11 @@ unwanted characters it should be filtered.
 *Simply call* `decodeInput(String input)` *and pass in the input:*
 
 `String result = "";`
+
 `result = huffman.decodeInput("10011101101"); // decoding input passed as String`
+
 `// decoding input from file`
-`result = huffman.decodeInput(huffman.getInputFromFile("test.txt")); 	`
+
+`result = huffman.decodeInput(huffman.getInputFromFile("test.txt"));`
+
 `result = equalLengthCompression.decodeInput(equalLengthCompression.getInputFromFile("test.txt"));`
