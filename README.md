@@ -2,9 +2,9 @@
 
 **Note**: all input should be in the form of a text file with a ".txt" extension. All program output will be done using Java's System.out.println().
 
-##Overview of Compression, Huffman, EqualLengthCompression classes
+###Overview of Compression, Huffman, EqualLengthCompression classes
 
-###Reading input:
+####Reading input:
 
 Both the `Huffman` class and the `EqualLengthCompression` class read input with the same inherited method.
 
