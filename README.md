@@ -55,12 +55,15 @@ Use `setupDictionaryFromFile(String fileName, boolean isAlphabetRawText)` to set
 Build the codes:
 
 `huffman.setupHuffmanCodes();`
+
 `equalLengthCompression.setupDictionaryFromFile("test.txt");`
+
 `setupDictionaryFromFile(String fileName) // will build the codes as well as setup the dictionary`
 
 It is worth noting that you can also print the codes and their letter:
 
 `huffman.printCodes();`
+
 `equalLengthCompression.printCodes();`
 
 Encoding text with Huffman object or `EqualLengthCompression` object:
@@ -70,15 +73,19 @@ You can either encode text by passing a `String` or you can encode text from a f
 Having a `Huffman` object or a `EqualLengthCompression` object:
 
 `Huffman huffman = new Huffman();`
+
 `EqualLengthCompression equalLengthCompression = new EqualLengthCompression();`
 
 Simply call `encodeInput(String input)` and pass in the input:
 
 `String result = "";`
+
 `result = huffman.encodeInput("Hello"); // encoding input passed as String`
 	
 `// Encoding input from file. Note that input from file is not filtered and you might have to filter it`
+
 `result = huffman.encodeInput(huffman.getInputFromFile("test.txt"));`
+
 `result = equalLengthCompression.encodeInput(equalLengthCompression.getInputFromFile("test.txt"));`
 
 Filtering input:
@@ -86,6 +93,7 @@ Filtering input:
 Use `removeNonLetterSymbols(String input, String additionalCharactersToKeep)` for `Huffman` objects and `EqualLengthCompression` objects to filter input.
 
 `input` - is the text to be filtered of non-letter characters
+
 `additionalCharactersToKeep` - are symbols to be kept
 
 returns -> `String` with filtered input
@@ -99,6 +107,7 @@ unwanted characters it should be filtered.
 Having a `Huffman` object or a `EqualLengthCompression` object:
 
 `Huffman huffman = new Huffman();`
+
 `EqualLengthCompression equalLengthCompression = new EqualLengthCompression();`
 
 Simply call `decodeInput(String input)` and pass in the input:
