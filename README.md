@@ -41,7 +41,7 @@ Both the `Huffman` class and the `EqualLengthCompression` class read input with 
 
 **You can either encode text by passing a** `String`**:**
 
-`huffman.encodeInput("Hello"); // encoding input passed as String`
+`huffman.encodeInput("Hello");`
 
 **Or you can encode text from a file:**
 
